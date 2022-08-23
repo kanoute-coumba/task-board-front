@@ -1,14 +1,32 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <!-- <nav class="nav">
+      <router-link to="/">Accueil</router-link> | 
+      <router-link to="/task">Ajouter une tache</router-link> |
+      <router-link to="/user">Ajouter un utilisateur</router-link>
+    </nav> -->
+
     <router-view/>
+    <!-- <todos></todos> -->
   </div>
 </template>
 
-<style>
+<script>
+// import Todos from './components/Todos.vue'
+
+export default {
+
+//   components: {
+//     Todos
+// }
+
+}
+</script>
+
+<style lang="scss">
+@import "./assets/settings";
+@import "~foundation-sites/scss/foundation.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +36,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 35px;
 }
 
 nav a {

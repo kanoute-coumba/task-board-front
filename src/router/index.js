@@ -1,14 +1,38 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Inscription from '../views/Inscription.vue'
+import Task from '../views/Task.vue'
+import Todo from '../views/Todo.vue'
+import Edit from '../views/Edit.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'HomeView',
     component: HomeView
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Inscription
+  },
+  {
+    path: '/task',
+    name: 'task',
+    component: Task
+  },
+  {
+    path: '/task/:id',
+    name: 'edit',
+    component: Edit
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: Todo
   },
   {
     path: '/about',
